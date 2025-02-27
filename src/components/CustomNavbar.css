@@ -1,0 +1,30 @@
+/* Navbar Styling */
+.custom-navbar {
+    width: 100%; /* Lebar penuh layar */
+    position: fixed; /* Navbar tetap di bagian atas */
+    top: 0;
+    left: 0;
+    z-index: 1030; /* Prioritas agar Navbar tampil di atas elemen lain */
+    border-bottom: 1px solid #ddd; /* Garis bawah sebagai pemisah */
+    background-color: #f8f9fa !important; /* Warna latar Navbar */
+}
+
+/* Ukuran Logo */
+.navbar-logo {
+    height: 60px; /* Tinggi logo default */
+    width: auto;
+}
+
+/* Responsif untuk Tablet */
+@media (max-width: 768px) {
+    .navbar-logo {
+        height: 50px;
+    }
+}
+
+/* Responsif untuk Mobile */
+@media (max-width: 576px) {
+    .navbar-logo {
+        height: 40px;
+    }
+}

@@ -1,0 +1,26 @@
+/* Styling untuk gambar agar responsif */
+.carousel img {
+    object-fit: cover; /* Gambar akan disesuaikan tanpa terpotong */
+    height: 500px; /* Tinggi default untuk desktop */
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .carousel img {
+        height: 300px; /* Lebih kecil untuk tablet */
+    }
+
+    .carousel-caption h5 {
+        font-size: 16px; /* Ukuran teks lebih kecil */
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel img {
+        height: 200px; /* Lebih kecil untuk mobile */
+    }
+
+    .carousel-caption h5 {
+        font-size: 14px; /* Ukuran teks lebih kecil */
+    }
+}
