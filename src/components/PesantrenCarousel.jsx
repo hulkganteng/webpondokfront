@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const slides = [
-  { id: 1, image: "/images/p1.jpg", title: "Gedung Putra" },
-  { id: 2, image: "/images/p2.jpg", title: "Gedung Putri" },
-  { id: 3, image: "/images/p3.jpg", title: "Asrama Santri" },
-  { id: 4, image: "/images/p4.jpg", title: "Asrama Putri Depan" },
+  { id: 1, image: "/images/p1.JPG", title: "Gedung Putra" },
+  { id: 2, image: "/images/p2.JPG", title: "Gedung Putri" },
+  { id: 3, image: "/images/p3.JPG", title: "Asrama Santri" },
+  { id: 4, image: "/images/p4.JPG", title: "Asrama Putri Depan" },
 ];
 
 function PesantrenCarousel() {
