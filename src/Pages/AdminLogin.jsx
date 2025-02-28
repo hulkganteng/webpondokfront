@@ -11,7 +11,7 @@ function AdminLogin() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://ppassyafiiyahbungah.com:3002/api/auth/login", {
+      const response = await axios.post("https://ppassyafiiyahbungah.com:3002/api/auth/login", {
         email,
         password,
       });
