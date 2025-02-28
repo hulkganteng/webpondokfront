@@ -94,7 +94,7 @@ function Home() {
                     title={item.title}
                     summary={item.summary}
                     date={item.date}
-                    image={item.image ? `http://ppassyafiiyahbungah.com:3002/uploads/${item.image}` : "https://via.placeholder.com/300"}
+                    image={item.image ? `https://ppassyafiiyahbungah.com:3002/uploads/${item.image}` : "https://via.placeholder.com/300"}
                   />
                 </div>
               ))
@@ -116,7 +116,7 @@ function Home() {
               filteredGallery.map((item) => (
                 <div key={item.id} className="transform transition duration-300 hover:scale-105">
                   <GaleriCard
-                    image={`http://localhost:3002/uploads/${item.image}`}
+                    image={`https://localhost:3002/uploads/${item.image}`}
                     alt={item.title}
                     caption={item.caption}
                   />

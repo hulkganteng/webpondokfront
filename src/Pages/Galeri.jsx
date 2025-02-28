@@ -32,8 +32,8 @@ function Galeri() {
         {gallery.length > 0 ? (
           <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {gallery.map((image) => (
-              <div key={image.id} className="cursor-pointer" onClick={() => openModal(`http://ppassyafiiyahbungah.com:3002/uploads/${image.image}`, image.caption)}>
-                <img src={`http://ppassyafiiyahbungah.com:3002/uploads/${image.image}`} alt={image.title} className="w-full h-56 object-cover rounded-lg shadow" />
+              <div key={image.id} className="cursor-pointer" onClick={() => openModal(`https://ppassyafiiyahbungah.com:3002/uploads/${image.image}`, image.caption)}>
+                <img src={`https://ppassyafiiyahbungah.com:3002/uploads/${image.image}`} alt={image.title} className="w-full h-56 object-cover rounded-lg shadow" />
                 <p className="text-center mt-2 text-gray-700">{image.caption}</p>
               </div>
             ))}

@@ -25,7 +25,7 @@ function AdminAddArticle() {
     if (imageFile) formData.append("image", imageFile);
 
     try {
-      await axios.post("http://ppassyafiiyahbungah.com:3002/api/articles", formData, {
+      await axios.post("https://ppassyafiiyahbungah.com:3002/api/articles", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
           Authorization: `Bearer ${token}`,
