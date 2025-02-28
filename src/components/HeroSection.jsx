@@ -6,7 +6,7 @@ function HeroSection() {
   return (
     <section
       className="relative h-96 bg-cover bg-center"
-      style={{ backgroundImage: 'url("/public/images/p2.jpg")' }}
+      style={{ backgroundImage: 'url("/images/p2.jpg")' }}
     >
       {/* Overlay Gelap */}
       <div className="absolute inset-0 bg-black opacity-50"></div>
