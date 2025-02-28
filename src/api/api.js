@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://ppassyafiiyahbungah.com:3002/api";
+// Gunakan HTTPS untuk API
+const API_BASE_URL = "https://ppassyafiiyahbungah.com:3002/api";  // Ubah HTTP ke HTTPS
 
 // Ambil token dari localStorage
 const getAuthHeaders = () => {
@@ -80,7 +81,6 @@ export const deleteArticle = async (id) => {
   }
 };
 
-// ✅ Get Article Detail by ID (Fixes previous bug)
 export const getArticleDetail = async (id) => {
   try {
     const response = await axios.get(`${API_BASE_URL}/articles/${id}`);
