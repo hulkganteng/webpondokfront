@@ -44,7 +44,7 @@ function ProfilPesantren() {
             transition={{ duration: 1 }}
           >
             <img
-              src="/public/images/p1.JPG"
+              src="/images/p1.JPG"
               alt="Profil Pesantren"
               className="w-full h-full object-cover"
             />
