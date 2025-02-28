@@ -66,7 +66,7 @@ function ArticleDetail() {
           {articleDetail.image ? (
             <div className="mb-8 flex justify-center">
               <img
-                src={`http://localhost:3002/uploads/${articleDetail.image}`}
+                src={`http://ppassyafiiyahbungah.com:3002/uploads/${articleDetail.image}`}
                 alt={articleDetail.title}
                 className="w-full max-w-3xl object-cover rounded-lg shadow-md"
               />

@@ -56,7 +56,7 @@ function NewsPage() {
                     title={item.title}
                     summary={item.summary}
                     date={item.date}
-                    image={item.image ? `http://localhost:3002/uploads/${item.image}` : "https://via.placeholder.com/300"}
+                    image={item.image ? `http://ppassyafiiyahbungah.com:3002/uploads/${item.image}` : "https://via.placeholder.com/300"}
                   />
                 </div>
               ))

@@ -78,7 +78,7 @@ function NewsDetail() {
           {/* 🔹 Tampilan Gambar dengan Desain Modern */}
           <div className="mb-8 flex justify-center">
             <img
-              src={newsDetail.image ? `http://localhost:3002/uploads/${newsDetail.image}` : "/placeholder.jpg"}
+              src={newsDetail.image ? `http://ppassyafiiyahbungah.com:3002/uploads/${newsDetail.image}` : "/placeholder.jpg"}
               alt={newsDetail.title || "No Image Available"}
               className="w-full max-w-3xl object-cover rounded-lg shadow-lg border border-gray-200"
             />
