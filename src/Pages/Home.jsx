@@ -6,7 +6,6 @@ import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
 import ArtikelCard from "../components/ArtikelCard";
 import BeritaCard from "../components/BeritaCard";
-import GaleriCard from "../components/GaleriCard";
 
 function Home() {
   const [articles, setArticles] = useState([]);
@@ -101,30 +100,6 @@ function Home() {
             ) : (
               <p className="text-center col-span-3 text-gray-600">
                 Tidak ada berita ditemukan.
-              </p>
-            )}
-          </div>
-        </section>
-
-        {/* 🏞️ Galeri Pesantren */}
-        <section className="mb-16">
-          <h2 className="text-4xl font-extrabold text-green-800 text-center mb-6">
-            Galeri Pesantren
-          </h2>
-          <div className="grid gap-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            {filteredGallery.length > 0 ? (
-              filteredGallery.map((item) => (
-                <div key={item.id} className="transform transition duration-300 hover:scale-105">
-                  <GaleriCard
-                    image={`https://ppassyafiiyahbungah.com:3002${item.image}`}
-                    alt={item.title}
-                    caption={item.caption}
-                  />
-                </div>
-              ))
-            ) : (
-              <p className="text-center col-span-4 text-gray-600">
-                Tidak ada galeri ditemukan.
               </p>
             )}
           </div>
