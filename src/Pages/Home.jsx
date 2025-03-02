@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
 import ArtikelCard from "../components/ArtikelCard";
 import BeritaCard from "../components/BeritaCard";
+import { Helmet } from "react-helmet";
 
 function Home() {
   const [articles, setArticles] = useState([]);
@@ -37,6 +38,11 @@ function Home() {
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
+      <Helmet>
+        <title>Home | Pondok Pesantren Assyafiiyah</title>
+        <meta name="description" content="Media Digital Santri" />
+        <meta name="keywords" content="Pesantren, Pendidikan, Berita, Artikel" />
+      </Helmet>
       <Navbar />
       <HeroSection />
       <main className="container mx-auto px-6 py-10">

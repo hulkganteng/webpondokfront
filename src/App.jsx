@@ -19,6 +19,7 @@ import PageTransition from "./components/PageTransition";
 import MorphingTransition from "./components/MorphingTransition"; 
 import ArticlesPage from "./Pages/ArticlesPage";  // Import halaman Artikel
 import NewsPage from "./Pages/NewsPage";  // Import halaman Berita
+import { Helmet } from 'react-helmet';
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -50,6 +51,11 @@ function AnimatedRoutes() {
 function App() {
   return (
     <Router>
+      <Helmet>
+        <title>Website Pondok Pesantren Assyafiiyah</title>
+        <meta name="description" content="Website Pesantren yang menyediakan berbagai informasi seputar pesantren, kegiatan, dan artikel." />
+        <meta name="keywords" content="Pesantren, Pendidikan, Berita, Artikel, Madrasah,Ponpes,Assyafiiyah,bungah,ppabg,Ponpes Assyafiiyah,PP Abg" />
+      </Helmet>
       <AnimatedRoutes />
     </Router>
   );

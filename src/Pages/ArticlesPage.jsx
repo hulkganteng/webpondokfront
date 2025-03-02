@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ArtikelCard from "../components/ArtikelCard";
+import { Helmet } from "react-helmet";
 
 function ArticlesPage() {
   const [articles, setArticles] = useState([]);
@@ -25,6 +26,12 @@ function ArticlesPage() {
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
+
+      <Helmet>
+        <title>Article  | Nama Website Anda</title>
+        <meta name="description" content="Media Aspirasi Santri Digital" />
+        <meta name="keywords" content="Pesantren, Pendidikan, Berita, Artikel" />
+      </Helmet>
       <Navbar />
       <main className="container mx-auto px-6 py-10">
         {/* 🔍 Pencarian */}
