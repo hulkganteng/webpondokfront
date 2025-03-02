@@ -17,7 +17,7 @@ function AdminRegister() {
       return;
     }
     try {
-      const response = await axios.post("https://localhost:3002/api/auth/register", {
+      const response = await axios.post("https://ppassyafiiyahbungah.com:3002/api/auth/register", {
         name,
         email,
         password,
