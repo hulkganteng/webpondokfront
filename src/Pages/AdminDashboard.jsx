@@ -52,9 +52,9 @@ function AdminDashboard() {
   };
 
   return (
-    <div className="min-h-screen flex bg-gray-100">
+    <div className="min-h-screen flex flex-col md:flex-row bg-gray-100">
       {/* Sidebar */}
-      <aside className="w-64 bg-gray-800 text-white flex flex-col">
+      <aside className="w-full md:w-64 bg-gray-800 text-white flex flex-col">
         <div className="h-16 flex items-center justify-center border-b border-gray-700">
           <h1 className="text-xl font-bold">Admin Panel</h1>
         </div>
@@ -102,7 +102,7 @@ function AdminDashboard() {
       </aside>
 
       {/* Main Content */}
-      <div className="flex-grow p-6">
+      <div className="flex-grow p-6 overflow-y-auto">
         <header className="mb-6">
           <h2 className="text-2xl font-bold text-gray-800">
             {activeTab.charAt(0).toUpperCase() + activeTab.slice(1)} Management
@@ -111,7 +111,7 @@ function AdminDashboard() {
 
         {/* Dashboard */}
         {activeTab === "dashboard" && (
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {[{ label: "News", count: news.length }, { label: "Articles", count: articles.length }, { label: "Gallery", count: gallery.length }].map((item) => (
               <div key={item.label} className="bg-white p-6 rounded-lg shadow text-center">
                 <h3 className="text-lg font-bold">{item.label}</h3>

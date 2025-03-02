@@ -116,7 +116,7 @@ function Home() {
               filteredGallery.map((item) => (
                 <div key={item.id} className="transform transition duration-300 hover:scale-105">
                   <GaleriCard
-                    image={`https://localhost:3002/uploads/${item.image}`}
+                    image={`https://ppassyafiiyahbungah.com:3002${item.image}`}
                     alt={item.title}
                     caption={item.caption}
                   />
