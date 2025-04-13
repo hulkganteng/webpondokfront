@@ -164,6 +164,15 @@ function Navbar() {
                 <Link to="/berita" className="flex items-center py-2 text-gray-800 hover:bg-gray-100">
                   <FaNewspaper className="mr-2" /> Berita
                 </Link>
+                <Link to="/brosur" className="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-100">
+                  <FaDownload className="mr-2" /> Brosur
+                </Link>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfEARrfTqThXNp8t2qVP-uyNBKsZ6Ihu51WlW9-EzNFs-j6Ew/viewform"
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   className="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-100">
+                  <FaDownload className="mr-2" /> Daftar
+                </a>
               </div>
             </div>
           </motion.div>
